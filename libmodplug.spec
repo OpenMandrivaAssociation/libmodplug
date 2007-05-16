@@ -1,5 +1,5 @@
 %define	name	libmodplug
-%define	version	0.8
+%define	version	0.8.4
 %define release %mkrel 1
 %define epoch 1 
 %define major 0
@@ -17,8 +17,6 @@ License:	Public Domain
 Group:		Sound
 URL:		http://modplug-xmms.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/modplug-xmms/%name-%{version}.tar.bz2
-# gw from gentoo cvs
-Patch: libmodplug-0.8-CVE-2006-4192.patch
 Epoch: %epoch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -50,7 +48,6 @@ compile programs using this library.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 %configure2_5x
