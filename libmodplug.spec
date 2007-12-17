@@ -18,7 +18,6 @@ Group:		Sound
 URL:		http://modplug-xmms.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/modplug-xmms/%name-%{version}.tar.bz2
 Epoch: %epoch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Olivier Lapicque, author of Modplug, which is arguably the best quality
