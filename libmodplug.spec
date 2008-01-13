@@ -1,6 +1,6 @@
 %define	name	libmodplug
 %define	version	0.8.4
-%define release %mkrel 1
+%define release %mkrel 2
 %define epoch 1 
 %define major 0
 %define mdkversion		%(perl -pe '/(\\d+)\\.(\\d)\\.?(\\d)?/; $_="$1$2".($3||0)' /etc/mandriva-release)
