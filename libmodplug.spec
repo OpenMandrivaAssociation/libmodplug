@@ -8,7 +8,7 @@
 Name:		%{name}
 Summary:	Modplug music player
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	Public Domain
 Group:		Sound
 URL:		http://modplug-xmms.sourceforge.net/
