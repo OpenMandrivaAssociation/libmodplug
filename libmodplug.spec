@@ -1,14 +1,14 @@
 %define	name	libmodplug
-%define	version	0.8.7
+%define	version	0.8.8.1
 %define epoch 1 
-%define major 0
+%define major 1
 %define libname %mklibname modplug %major
 %define develname %mklibname -d modplug
 
 Name:		%{name}
 Summary:	Modplug music player
 Version:	%{version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 License:	Public Domain
 Group:		Sound
 URL:		http://modplug-xmms.sourceforge.net/
