@@ -1,5 +1,5 @@
 %define	name	libmodplug
-%define	version	0.8.8.1
+%define	version	0.8.8.2
 %define epoch 1 
 %define major 1
 %define libname %mklibname modplug %major
