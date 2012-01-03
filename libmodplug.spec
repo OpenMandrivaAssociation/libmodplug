@@ -8,7 +8,7 @@
 Name:		%{name}
 Summary:	Modplug music player
 Version:	%{version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	Public Domain
 Group:		Sound
 URL:		http://modplug-xmms.sourceforge.net/
@@ -70,7 +70,6 @@ rm -rf %{buildroot}
 %files -n %develname
 %defattr(-,root,root)
 %doc AUTHORS TODO ChangeLog
-%{_libdir}/libmodplug.la
 %{_libdir}/libmodplug.so
 %{_includedir}/libmodplug/
 %_libdir/pkgconfig/*.pc
