@@ -52,7 +52,7 @@ compile programs using this library.
 %{_libdir}/libmodplug.so.%{major}*
 
 %files -n %{devname}
-%doc AUTHORS TODO ChangeLogc README COPYING
+%doc AUTHORS TODO ChangeLog README COPYING
 %{_libdir}/libmodplug.so
 %{_includedir}/libmodplug/
 %{_libdir}/pkgconfig/*.pc
