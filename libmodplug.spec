@@ -6,7 +6,7 @@ Summary:	Modplug music player
 Name:		libmodplug
 Epoch:		1
 Version:	0.8.8.4
-Release:	3
+Release:	4
 License:	Public Domain
 Group:		Sound
 Url:		http://modplug-xmms.sourceforge.net/
