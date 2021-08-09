@@ -2,15 +2,17 @@
 %define libname %mklibname modplug %{major}
 %define devname %mklibname -d modplug
 
+%define date 20210809
+
 Summary:	Modplug music player
 Name:		libmodplug
 Epoch:		1
-Version:	0.8.9.0
-Release:	1
+Version:	0.8.9.1
+Release:	%{?date:0.%{date}.}1
 License:	Public Domain
 Group:		Sound
 Url:		http://modplug-xmms.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/modplug-xmms/%{name}-%{version}.tar.gz
+Source0:	https://github.com/Konstanty/libmodplug/archive/refs/heads/master.tar.gz
 
 %description
 Olivier Lapicque, author of Modplug, which is arguably the best quality
@@ -39,14 +41,16 @@ This is the development package of libmodplug. Install it if you want to
 compile programs using this library.
 
 %prep
-%setup -q
+%autosetup -p1 -n %{name}-%{?date:master}%{!?date:%{version}}
+# The cmake build files are too buggy to use for now
+# no soname, no lib64, ...
+%configure
 
 %build
-%configure2_5x
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/libmodplug.so.%{major}*
