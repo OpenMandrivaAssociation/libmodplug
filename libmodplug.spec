@@ -11,7 +11,7 @@ Version:	0.8.9.1
 Release:	%{?date:0.%{date}.}1
 License:	Public Domain
 Group:		Sound
-Url:		http://modplug-xmms.sourceforge.net/
+Url:		https://modplug-xmms.sourceforge.net/
 Source0:	https://github.com/Konstanty/libmodplug/archive/refs/heads/master.tar.gz
 
 %description
