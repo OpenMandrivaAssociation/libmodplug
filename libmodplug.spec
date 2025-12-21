@@ -14,6 +14,11 @@ Group:		Sound
 Url:		https://modplug-xmms.sourceforge.net/
 Source0:	https://github.com/Konstanty/libmodplug/archive/refs/heads/master.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Olivier Lapicque, author of Modplug, which is arguably the best quality
 MOD-playing software available, has placed his sound rendering code in the
